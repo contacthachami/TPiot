@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Bachelor 3IASD - TP Arduino",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 78, "left": 8, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultra1", "top": 22, "left": 330, "attrs": { "distance": "8" } },
+    { "type": "wokwi-led", "id": "led1", "top": 226, "left": 350, "attrs": { "color": "red", "label": "Alerte D3" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 292, "left": 318, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "uno:5V", "ultra1:VCC", "red", [] ],
+    [ "uno:GND.1", "ultra1:GND", "black", [] ],
+    [ "uno:9", "ultra1:TRIG", "green", [] ],
+    [ "uno:10", "ultra1:ECHO", "blue", [] ],
+    [ "uno:3", "r1:1", "orange", [] ],
+    [ "r1:2", "led1:A", "orange", [] ],
+    [ "led1:C", "uno:GND.2", "black", [] ]
+  ],
+  "serialMonitor": { "display": "terminal", "newline": "lf" }
+}

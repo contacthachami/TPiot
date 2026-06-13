@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simulateur local - TP Arduino IoT</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">IoT</span>
+          <div>
+            <strong>TP Arduino</strong>
+            <span>Simulation locale</span>
+          </div>
+        </div>
+        <nav class="tp-list" id="tpList" aria-label="Liste des TPs"></nav>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="tpCategory">Base</p>
+            <h1 id="tpTitle">TP Arduino</h1>
+          </div>
+          <button class="reset-button" id="resetButton" type="button">Reset</button>
+        </header>
+
+        <section class="sim-grid" aria-label="Simulation">
+          <div class="circuit-panel">
+            <div class="board" id="board">
+              <div class="board-chip"></div>
+              <div class="board-title" id="boardTitle">Arduino Uno</div>
+              <div class="pin-list" id="pinList"></div>
+            </div>
+
+            <div class="wire-layer" id="wireLayer"></div>
+
+            <div class="component-zone">
+              <div class="led-strip" id="ledStrip"></div>
+
+              <div class="servo-block is-hidden" id="servoBlock">
+                <div class="servo-body">
+                  <div class="servo-hub">
+                    <div class="servo-arm" id="servoArm"></div>
+                  </div>
+                </div>
+                <strong id="servoValue">0 deg</strong>
+              </div>
+
+              <div class="sensor-block is-hidden" id="sensorBlock">
+                <span id="sensorLabel">Capteur</span>
+                <strong id="sensorValue">--</strong>
+                <div class="sensor-meter">
+                  <span id="sensorMeter"></span>
+                </div>
+              </div>
+
+              <div class="dashboard-block is-hidden" id="dashboardBlock">
+                <span>Dashboard ESP32</span>
+                <strong id="dashboardMain">--</strong>
+                <small id="dashboardSub">--</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-panel">
+            <section>
+              <h2>Commandes</h2>
+              <div class="controls" id="controls"></div>
+            </section>
+
+            <section>
+              <h2>Sortie serie</h2>
+              <pre class="serial-box" id="serialBox"></pre>
+            </section>
+          </div>
+        </section>
+
+        <section class="details-grid">
+          <article>
+            <h2>Materiel</h2>
+            <ul id="materialsList"></ul>
+          </article>
+          <article>
+            <h2>Cablage</h2>
+            <ul id="wiringList"></ul>
+          </article>
+          <article class="code-card">
+            <h2>Code principal</h2>
+            <pre id="codePreview"></pre>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

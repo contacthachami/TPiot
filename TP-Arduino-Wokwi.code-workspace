@@ -1,0 +1,14 @@
+{
+  "folders": [
+    { "name": "TP1 LED ON", "path": "wokwi/base_tp1_led_on" },
+    { "name": "TP2 LED Blink", "path": "wokwi/base_tp2_led_blink" },
+    { "name": "TP3 Chenillard", "path": "wokwi/base_tp3_chenillard" },
+    { "name": "Servo Sweep", "path": "wokwi/inter_tp1_servo_sweep" },
+    { "name": "Servo Pot", "path": "wokwi/inter_tp1b_servo_pot" },
+    { "name": "HC-SR04 Distance", "path": "wokwi/inter_tp2_hcsr04_distance" },
+    { "name": "HC-SR04 LED", "path": "wokwi/inter_tp3_hcsr04_led" },
+    { "name": "DHT Serial", "path": "wokwi/adv_tp1_dht_serial" },
+    { "name": "ESP32 DHT WiFi", "path": "wokwi/adv_tp2_esp32_dht_wifi" }
+  ],
+  "settings": {}
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Bachelor 3IASD - TP Arduino",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 74, "left": 8, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 52, "left": 330, "attrs": { "temperature": "24", "humidity": "45" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 170, "left": 314, "attrs": { "value": "10000" } }
+  ],
+  "connections": [
+    [ "uno:5V", "dht1:VCC", "red", [] ],
+    [ "uno:GND.1", "dht1:GND", "black", [] ],
+    [ "uno:2", "dht1:SDA", "green", [] ],
+    [ "dht1:SDA", "r1:1", "green", [] ],
+    [ "r1:2", "uno:5V", "red", [] ]
+  ],
+  "serialMonitor": { "display": "terminal", "newline": "lf" }
+}

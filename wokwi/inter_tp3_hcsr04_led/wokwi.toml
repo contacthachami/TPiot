@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/inter_tp3_hcsr04_led.ino.hex'
+elf = 'build/inter_tp3_hcsr04_led.ino.elf'

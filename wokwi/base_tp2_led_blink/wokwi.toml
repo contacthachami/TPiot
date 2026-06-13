@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/base_tp2_led_blink.ino.hex'
+elf = 'build/base_tp2_led_blink.ino.elf'

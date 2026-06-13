@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = 'build/adv_tp2_esp32_dht_wifi.ino.bin'
+elf = 'build/adv_tp2_esp32_dht_wifi.ino.elf'
+
+[[net.forward]]
+from = 'localhost:8180'
+to = 'target:80'

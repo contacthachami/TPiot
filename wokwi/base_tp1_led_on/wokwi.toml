@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/base_tp1_led_on.ino.hex'
+elf = 'build/base_tp1_led_on.ino.elf'

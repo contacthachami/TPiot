@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Bachelor 3IASD - TP Arduino",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 70, "left": 8, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultra1", "top": 42, "left": 330, "attrs": { "distance": "120" } }
+  ],
+  "connections": [
+    [ "uno:5V", "ultra1:VCC", "red", [] ],
+    [ "uno:GND.1", "ultra1:GND", "black", [] ],
+    [ "uno:9", "ultra1:TRIG", "green", [] ],
+    [ "uno:10", "ultra1:ECHO", "blue", [] ]
+  ],
+  "serialMonitor": { "display": "terminal", "newline": "lf" }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Bachelor 3IASD - TP Arduino",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 42, "left": 12, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 0, "left": 265, "attrs": { "color": "red", "label": "LED D13" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 74, "left": 232, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "uno:13", "r1:1", "green", [] ],
+    [ "r1:2", "led1:A", "green", [] ],
+    [ "led1:C", "uno:GND.1", "black", [] ]
+  ]
+}
